@@ -18,12 +18,18 @@ bun pm cache rm
 
 ### CLI Mode
 
-Install and run:
+Install globally (requires SSH access):
 ```bash
 bun add -g git@github.com:nitsanavni/mcp-cli-combo.git
+```
+
+Run:
+```bash
 mcp-cli-combo cli Alice
 mcp-cli-combo cli Bob --enthusiastic
 ```
+
+Note: For private repositories, your system needs appropriate SSH credentials to access the repository.
 
 ### MCP Server Mode
 

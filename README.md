@@ -30,7 +30,7 @@ bunx github:nitsanavni/mcp-cli-combo#main cli Bob --enthusiastic
 
 Add to your MCP configuration:
 ```bash
-claude mcp add -s user greeter bunx -- github:nitsanavni/mcp-cli-combo mcp
+claude mcp add -s user greeter bunx -- github:nitsanavni/mcp-cli-combo#main mcp
 ```
 
 ## Available Tools/Commands

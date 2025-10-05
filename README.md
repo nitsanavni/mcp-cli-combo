@@ -20,8 +20,8 @@ bun pm cache rm
 
 Run directly from GitHub:
 ```bash
-bunx github:nitsanavni/mcp-cli-combo#main cli Alice
-bunx github:nitsanavni/mcp-cli-combo#main cli Bob --enthusiastic
+bunx git@github.com:nitsanavni/mcp-cli-combo.git cli Alice
+bunx git@github.com:nitsanavni/mcp-cli-combo.git cli Bob --enthusiastic
 ```
 
 ### MCP Server Mode
@@ -30,7 +30,7 @@ bunx github:nitsanavni/mcp-cli-combo#main cli Bob --enthusiastic
 
 Add to your MCP configuration:
 ```bash
-claude mcp add -s user greeter bunx -- github:nitsanavni/mcp-cli-combo#main mcp
+claude mcp add -s user greeter bunx -- git@github.com:nitsanavni/mcp-cli-combo.git mcp
 ```
 
 ## Available Tools/Commands
@@ -45,5 +45,5 @@ Greet someone by name with optional enthusiastic mode.
 
 **CLI:**
 ```bash
-bunx github:nitsanavni/mcp-cli-combo#main cli <name> [--enthusiastic]
+bunx git@github.com:nitsanavni/mcp-cli-combo.git cli <name> [--enthusiastic]
 ```

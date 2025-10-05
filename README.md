@@ -18,10 +18,10 @@ bun pm cache rm
 
 ### CLI Mode
 
-Run locally:
+Run directly from GitHub:
 ```bash
-bun run index.ts cli Alice
-bun run index.ts cli Bob --enthusiastic
+bunx github:nitsanavni/mcp-cli-combo#main cli Alice
+bunx github:nitsanavni/mcp-cli-combo#main cli Bob --enthusiastic
 ```
 
 ### MCP Server Mode
@@ -45,5 +45,5 @@ Greet someone by name with optional enthusiastic mode.
 
 **CLI:**
 ```bash
-bun run index.ts cli <name> [--enthusiastic]
+bunx github:nitsanavni/mcp-cli-combo#main cli <name> [--enthusiastic]
 ```

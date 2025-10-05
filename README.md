@@ -18,10 +18,11 @@ bun pm cache rm
 
 ### CLI Mode
 
-Run directly from GitHub:
+Install and run:
 ```bash
-bunx git@github.com:nitsanavni/mcp-cli-combo.git cli Alice
-bunx git@github.com:nitsanavni/mcp-cli-combo.git cli Bob --enthusiastic
+bun add -g git@github.com:nitsanavni/mcp-cli-combo.git
+mcp-cli-combo cli Alice
+mcp-cli-combo cli Bob --enthusiastic
 ```
 
 ### MCP Server Mode
@@ -45,5 +46,6 @@ Greet someone by name with optional enthusiastic mode.
 
 **CLI:**
 ```bash
-bunx git@github.com:nitsanavni/mcp-cli-combo.git cli <name> [--enthusiastic]
+bun add -g git@github.com:nitsanavni/mcp-cli-combo.git
+mcp-cli-combo cli <name> [--enthusiastic]
 ```

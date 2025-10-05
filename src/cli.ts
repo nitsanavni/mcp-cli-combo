@@ -6,10 +6,12 @@
 
 import { greet } from "./greeter.js";
 
-const args = process.argv.slice(2);
+// When called via router, "cli" is already consumed at index 2
+// So we need to get args starting from index 3
+const args = process.argv.slice(3);
 
 if (args.length === 0) {
-  console.error("Usage: greeter-cli <name> [--enthusiastic]");
+  console.error("Usage: mcp-cli-combo cli <name> [--enthusiastic]");
   process.exit(1);
 }
 

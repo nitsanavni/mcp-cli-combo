@@ -1,0 +1,22 @@
+{
+  "name": "mcp-cli-combo",
+  "version": "0.1.0",
+  "module": "index.ts",
+  "type": "module",
+  "bin": {
+    "mcp-cli-combo": "./index.ts"
+  },
+  "scripts": {
+    "mcp": "bun run index.ts mcp",
+    "cli": "bun run index.ts cli"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.1"
+  }
+}

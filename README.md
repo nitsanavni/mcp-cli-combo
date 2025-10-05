@@ -18,18 +18,17 @@ bun pm cache rm
 
 ### CLI Mode
 
-Install globally (requires SSH access):
+Run directly from GitHub:
 ```bash
-bun add -g git@github.com:nitsanavni/mcp-cli-combo.git
+bunx git+https://github.com/nitsanavni/mcp-cli-combo.git cli Alice
+bunx git+https://github.com/nitsanavni/mcp-cli-combo.git cli Bob --enthusiastic
 ```
 
-Run:
+Or install globally:
 ```bash
+bun add -g git+https://github.com/nitsanavni/mcp-cli-combo.git
 mcp-cli-combo cli Alice
-mcp-cli-combo cli Bob --enthusiastic
 ```
-
-Note: For private repositories, your system needs appropriate SSH credentials to access the repository.
 
 ### MCP Server Mode
 
@@ -37,7 +36,7 @@ Note: For private repositories, your system needs appropriate SSH credentials to
 
 Add to your MCP configuration:
 ```bash
-claude mcp add -s user greeter bunx -- git@github.com:nitsanavni/mcp-cli-combo.git mcp
+claude mcp add -s user greeter bunx -- git+https://github.com/nitsanavni/mcp-cli-combo.git mcp
 ```
 
 ## Available Tools/Commands
@@ -52,6 +51,5 @@ Greet someone by name with optional enthusiastic mode.
 
 **CLI:**
 ```bash
-bun add -g git@github.com:nitsanavni/mcp-cli-combo.git
-mcp-cli-combo cli <name> [--enthusiastic]
+bunx git+https://github.com/nitsanavni/mcp-cli-combo.git cli <name> [--enthusiastic]
 ```
